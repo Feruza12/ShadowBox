@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>National Premier labaratories</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+ <script>
+    function selectOnlyThis(id){
+    var myCheckbox = document.getElementsByName("myCheckbox");
+    Array.prototype.forEach.call(myCheckbox,function(el){
+      el.checked = false;
+    });
+    id.checked = true;
+}
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <a href="index.html" class="logo"><img class="img_logo" src="img/logo.png" alt="logo" /></a>
+    <div class="navinfo col-3">
+      <ul class="ul">
+        <li> <span class="bold">Althea McPhail MD,</span> <span class="italic mr-2">Lab Director</span>
+          <span class="blue">CLIA #</span> <span class="bold">11D2080143</span></li>
+        <li class="item"> <span class="bold">210 Medical Boulevard, Stockbridge, Georgia 30281</span></li>
+        <li class="item">
+          <ul class="list-inline">
+            <li class="item list-inline"> <span class="italic blue mr-2">tel</span> <span class="bold">770 506
+                9985</span></li>
+            <li class="item list-inline"> <span class="italic blue mr-2">fax</span> <span class="bold"> 770 506
+                9982</span></li>
+            <li class="item list-inline"> <span class="italic blue mr-2">web </span> <a href="#" class="blue bold">
+                nplinc.com</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <h1 class="title">Cancer Genomics Requisition</h1>
+    <div class="account_info">
+      <h3 class="blue inline_header"><span class="green">1</span> Account Information</h3>
+       <p class="text_info"><span class="dark_blue bold"> Specimen Collected Date:</span> <input type="text" class="form-control inline_input" id=""> </p>
+      <div class="box">
+        <form>
+          <div class="">
+            <div class="form-group col-3">
+              <label for="inputReq">Account Name</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-3">
+              <label for="inputReq">NPL Client Code (optional)</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-3">
+              <label for="inputtext4">Requesting Physician</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-3">
+              <label for="inputtext4">Collected By (print)</label>
+              <input type="text" class="form-control" id="">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="patient_info">
+      <h3 class="blue inline_header"><span class="green">2</span> Patient Information</h3>
+      <p class="text_info"><span class="dark_blue bold"> REQUIRED:</span> Enclose a copy of the front and back of patient’s
+        insurance card(s), driver’s license, and patient demographic.</p>
+      <div class="box">
+        <form>
+          <div class="">
+            <div class="form-group col-3">
+              <label for="inputReq">Last Name</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-2">
+              <label for="inputReq">First Name</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-2">
+              <label for="inputtext4">Middle Initial</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-2">
+              <label for="inputtext4">Sex</label>
+
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value="male"><span style="vertical-align: middle; margin-left: 4px">M</span></div>
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value="female"><span style="vertical-align: middle; margin-left: 4px">F</span></div>
+            </div>
+            <div class="form-group col-2">
+              <label for="inputtext4">Social Security #</label>
+              <input type="text" class="form-control" id="">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="box border_top">
+        <form>
+          <div class="">
+            <div class="form-group col-2">
+              <label for="inputReq">Address</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col">
+              <label for="inputReq">City</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col">
+              <label for="inputtext4">State</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col">
+              <label for="inputtext4">Zip</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col">
+              <label for="inputtext4">Phone #</label>
+              <input type="text" class="form-control" id="">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="box border_top">
+        <form>
+          <div class="">
+            <div class="form-group col-2">
+              <label for="inputReq">Email</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-2">
+              <label for="inputReq">Patient ID #</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-2">
+              <label for="inputtext4">Primary Insurance Subscriber DOB</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-2">
+              <label for="inputtext4">Specimen Type</label>
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value="male"> <span style="vertical-align: middle; margin-left: 4px">Buccal Swab</span></div>
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value="female"><span style="vertical-align: middle; margin-left: 4px">Saliva</span></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="ancestry">
+      <h3 class="blue inline_header"><span class="green">3</span> Ancestry</h3>
+      <p class="text_info">(Select all that apply.)</p>  
+        <form>
+          <div class="">            
+            <div class="form-group-checkbox">
+              <div class="inline"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">African American</span></div>
+              <div class="inline"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">American Indian</span></div>
+             <div class="inline"> <input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Asian</span></div>
+             <div class="inline"> <input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Ashkenazi Jewish</span></div>
+             <div class="inline"> <input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Caucasian</span></div>
+             <div class="inline"> <input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Hispanic</span></div>
+             <div class="inline"> <input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""> <span style="vertical-align: middle; margin-left: 4px">Middle Eastern</span></div>
+             <div class="inline"> <input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""> <span style="vertical-align: middle; margin-left: 4px">Pacific Islander</span></div>
+             <div class="inline"> <input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Other</span></div>
+            </div>
+          </div>
+        </form>
+    </div>
+    <div class="diagnosis_code">  
+      <table>
+        <tr>
+          <th class="main_th"><h3 class="blue inline_header diagnosis_h"><span class="green">4</span> ICD-10 Diagnosis Code(s)</h3></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+  <div class="test_requested"> 
+    <h3 class="blue inline_header diagnosis_h"><span class="green">5</span> Test Requested</h3>
+    <div class="ordered_tests">
+      <h4 class="ordered_tests_header">Tests ordered will be processed and billed based on payer criteria</h4>
+      <div class="tr_box">
+        <div class="inline"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px"><span class="bold">BRCA1/2</span> - <span class="dark_blue bold italic">2 Genes:</span> <span class="small_text"> Sequencing and duplictation/deletion analysis</span></span></div>
+        <div class="inline"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px"><span class="bold">Breast & Ovarian Cancer </span> - <span class="dark_blue bold italic"> 15 Genes</span> <span class="middle_text"> ATM, BRACA1, BRACA2, BRIP1, CDH1, MLH1, MSH2, MSH6, PALB2PTEN, RAD51C, RET, STK11, TP53, VHL</span></span></div>
+         <div class="inline"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px"><span class="bold">Comprehensive Inherited Cancer Panel</span> - <span class="dark_blue bold italic"> 39 Genes linked to Breast, Ovarian, Colon, Pancreatic, and other major cancers:</span> <span class="middle_text">APC, ATM, BARD1, BMPR1A, BRCA1, BRCA2, BRIP1, CDH1, CDK4, P16(CDKN2A), CHEK2, ELAC2, EPCAM, FANCC, HRAS1, MEN1, MET, MLH1, MRE11a, MSH2,
+          MSH6, MUTYH, NBN, NF1, NTRK1, PALB2, PALLD, PMS2, PTCH1, PTEN, RAD50, RAD51, RAD51C, RAD51D, RET, SMAD4, STK11, TP53, VHL</span></span></div>
+      <div class="inline"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px"><span class="bold">Colorectal Cancer Panel </span> - <span class="dark_blue bold italic"> 12 Genes:</span> <span class="middle_text">APC, BMPR1A, CDH1, EPCAM, MLH1, MSH2, MSH6, MUTYH, PMS2, PTEN, SMAD4, STK11</span></span></div>      
+      <div class="inline"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px"><span class="bold">Lynch Syndrome </span> - <span class="dark_blue bold italic"> 5 Genes:</span><span class="small_text">Sequencing and duplictation/deletion analysis,</span> <span class="middle_text">EPCAM, MLH1, MSH2, MSH6, PMS2</span></span></div>
+      </div>
+    </div>
+    </div>
+    <div class="billing">
+      <h3 class="blue inline_header"><span class="green">6</span> Billing / Payment Information</h3>
+       <div class=""><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px"><span class="bold">Option 1: Billing Insurance  </span> - <span class="dark_blue"> Include a copy of <span class="bold">BOTH SIDES</span> of your insurance card(s). If submitting more than one card, indicate which is primary</span></span></div>      
+      <div class="box">
+        <form>
+          <div class="">
+            <div class="form-group col-3">
+              <label for="inputReq">Name of Policy Holder</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-3">
+              <label for="inputReq">Policy Holder Date of Birth</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-2">
+              <label for="inputtext4">Policy Holder Insurance ID #</label>
+              <input type="text" class="form-control" id="">
+            </div>
+            <div class="form-group col-3">
+              <label for="inputtext4">Relationship to Policy Holder</label>
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value=""> <span style="vertical-align: middle; margin-left: 4px">Self</span></div>
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Spouse</span></div>
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Child</span></div>
+              <div class="inline"><input type="checkbox" class="radio"  onclick="selectOnlyThis(this)" name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px">Other</span></div>
+            </div>            
+          </div>
+        </form>
+      </div>
+       <div class="inline col-4"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span  class="bold" style="vertical-align: middle; margin-left: 4px">Option 2: Billing Medicare</span></div> 
+       <div class="inline col-4"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span  class="bold" style="vertical-align: middle; margin-left: 4px">Option 3: Billing Medicaid</span></div> 
+       <div class="inline col-4"><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span  class="bold" style="vertical-align: middle; margin-left: 4px">Option 4: Client Bill</span></div> 
+       <div class=""><input  type="checkbox" class="radio ancestry_check"  name="myCheckbox" value=""><span style="vertical-align: middle; margin-left: 4px"><span class="bold">Option 5: Patient Payment</span> - <span class="dark_blue"> Please call Customer Service for questions regarding test prices or for credit card payment.</span></span></div> 
+    </div>
+    <div class="horizontal_line">
+    </div>
+    <div class="authorization">
+    <h3 class="blue inline_header"><span class="green">7</span> Health Provider Authorization & Statement of Medical Necessity</h3>
+    <p class="italic text_auth">By their signature below, the healthcare provider authorizes performance of the test(s) and indicates that he or she has explained the purpose of the test, the procedures, the benefits and the risks that are
+  involved in testing to their patient and obtained the patient’s informed consent in accordance with state and local laws. I affirm each of the following: I have provided genetic testing information to the
+  patient and the patient has consented to genetic testing. This test is medically necessary for the diagnosis or detection of a disease, illness, impairment, symptom, syndrome or disorder. The results will
+  be used for the patient’s medical management and treatment decisions. The person listed as the Ordering Physician is authorized by law to order the test(s) requested herein</p>
+  <div class="signature">
+    <p class="text_info col-4" style="float: left; font-size: 18px;"><span class="bold"> Provider Signature:</span> <input type="text" class="form-control inline_input" id=""> </p>
+   <p class="text_info col-3" style="float: right;font-size: 18px;"><span class="bold">Date:</span> <input type="text" class="form-control inline_input" id=""> </p>
+  </div>
+  
+    </div>
+  </div>
+</body>
+ 
+</html>
